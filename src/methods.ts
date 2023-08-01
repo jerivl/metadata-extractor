@@ -260,6 +260,9 @@ export default class Methods {
 		for (const tfile of this.app.vault.getMarkdownFiles()) {
 			const displayName = tfile.basename;
 			const relativeFilePath: string = tfile.path;
+      if (['.private', '.github', '.obsidian'].some(x => relativeFilePath.contains(x))){
+        continue;
+      }
 			let currentCache!: CachedMetadata;
 			const cache = this.app.metadataCache.getFileCache(tfile);
 			if (cache) {
