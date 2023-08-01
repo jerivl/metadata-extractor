@@ -21,5 +21,9 @@ tests/Dev-Metadata-Extractor/.obsidian/plugins/metadata-extractor/
 
 tests/Dev-Metadata-Extractor/.obsidian/workspace
 
+tags.json
+metadata.json
+canvas.json
+allExceptMd.json
 
 .DS_Store
